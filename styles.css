@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
+:root {
+    --gr: linear-gradient(90deg, rgb(0, 49, 13), black);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--gr);
+}
+
+.header_caption {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_quote {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-size: 20px;
+}
+
+.header_nav_list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.link {
+    margin: 0 30px;
+    font-size: 28px;
+}
+
+.link>a[href="#"] {
+    font-weight: 800;
+}
+
+.link>a:hover {
+    text-shadow: 0px 5px 2px #ffffff55;
+}
+
+.link>a {
+    color: white;
+    text-decoration: none;
+    transition: all .25s ease-in;
+    text-shadow: 0px 5px 15px #ffffff55;
+}
+
+html {
+    font-family: "Montagu Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header_caption_icon {
+    width: auto;
+    height: 50px;
+}
+
+.header_caption_text {
+    font-size: 32px;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-green {
+    color: green;
+}
+
+.color-red {
+    color: red;
+}
+
+main {
+    padding: 10px 10px;
+}
+
+h1 {
+    font-size: 100px;
+    margin: 0 2.5vw;
+    background-image: var(--gr);
+    background-clip: text;
+    color: transparent;
+    width: 95vw;
+}
+
+.main_text {
+    width: 55vw;
+    margin: 0 2.5vw;
+}
+
+.main_text_paragraph, .description {
+    background-image: var(--gr);
+    background-clip: text;
+    color: transparent;
+    font-size: 32px;
+    margin: 0;
+}
+
+.description {
+    margin: 0 0 0 2.5vw;
+}
+
+.image-map {
+    width: 300px;
+    height: 300px;
+}
+
+.image-flag {
+    width: 500px;
+}
+
+.image-emblem {
+    width: 150px;
+    height: 150px;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.right_images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    margin: 10px;
+}
+
+.image-president {
+    width: 250px;
+    margin: 0 10px 0 0;
+}
+
+.div-president-title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.iframe {
+    width: 90vw;
+    height: 50vw;
+    margin: 0 0 0 2.5vw;
+}
+
+@media screen and (width < 480px) {
+    .header {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .header_caption_icon {
+        height: 20px;
+    }
+    .header_caption {
+        margin: 20px 0 0 0;
+    }
+    .header_caption_text {
+        font-size: 20px;
+        margin: 0 0 0 20px;
+    }
+    .header_quote {
+        display: none;
+    }
+    .header_nav_list {
+        padding: 0;
+    }
+    .link {
+        margin: 0 20px;
+    }
+    .flex {
+        display: block;
+    }
+}
